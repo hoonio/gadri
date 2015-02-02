@@ -13,12 +13,9 @@ var config = require('./config/environment');
 var app = express();
 // var server = require('http').createServer(app);
 
-var http = require('http')
-var port = process.env.PORT || 1337;
-var server = http.createServer(function(req, res) {
-  res.writeHead(200, { 'Content-Type': 'text/plain' });
-  res.end('Hello World\n');
-}).listen(port);
+var http = require('http');
+var port = process.env.PORT || 9000;
+var server = http.createServer(app);
 
 require('./config/express')(app);
 require('./routes')(app);
