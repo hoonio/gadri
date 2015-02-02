@@ -8,4 +8,6 @@ angular.module('gadriApp')
       $scope.awesomeThings = awesomeThings;
     });
 
+    google.maps.event.addDomListener(window, 'load', initialize);
+
   });
