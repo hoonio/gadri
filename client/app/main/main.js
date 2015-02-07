@@ -7,5 +7,10 @@ angular.module('gadriApp')
         url: '/',
         templateUrl: 'app/main/main.html',
         controller: 'MainCtrl'
+      })
+      .state('radar', {
+        url: '/radar/:country',
+        templateUrl: 'app/radar/template.html',
+        controller: 'RadarCtrl'
       });
   });

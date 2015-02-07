@@ -3,8 +3,11 @@
 angular.module('gadriApp')
   .controller('NavbarCtrl', function ($scope, $location) {
     $scope.menu = [{
-      'title': 'Home',
+      'title': 'Maps',
       'link': '/'
+    },{
+      'title': 'RadarGraph-UK',
+      'link': '/radar/United+Kingdom'
     }];
 
     $scope.isCollapsed = true;
