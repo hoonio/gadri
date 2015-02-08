@@ -1,7 +1,18 @@
 
 <div class="full-screen">
   <div id="map-container" ng-controller="MainCtrl" class="full-screen">
-    <map zoom="2" center="[45.518970, -122.672899]"></map>
+    <map zoom="2" center="[45.518970, -122.672899]">
+      <fusion-tables-layer query="{
+        select: 'col3',
+        from: '1CPstysgMWwGQeX7HmPtaeDG7l3enNTJrEqwPPYSG'
+        }"
+        options= "{
+          styleId: 2,
+          templateId: 2
+        }">
+      </fusion-tables-layer>
+
+    </map>
   </div>
 
 </div>

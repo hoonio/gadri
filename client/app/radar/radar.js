@@ -7,10 +7,10 @@ angular.module('gadriApp')
   $http.get('https://spreadsheets.google.com/feeds/list/1j_T9J66a5iFnjIiGVEW3uHFpz3iYxl-gFGdqghAjNVg/1/public/values?gid=2110785703&alt=json')
     .then(function(res){
 
-      angular.forEach(res.data.feed.entry, function(countryData, key){
+      angular.forEach(res.data.feed.entry, function(countryData){
         if (requestedCountry === countryData.gsx$url.$t)
         {
-          console.log("Found a match: " + countryData.gsx$hazardandexposure.$t);
+          console.log('Found a match: ' + countryData.gsx$hazardandexposure.$t);
           var graphData = {
             id: 'cvs',
             data: [],

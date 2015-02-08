@@ -142,7 +142,9 @@ module.exports = function (grunt) {
       all: [
         '<%= yeoman.client %>/{app,components}/**/*.js',
         '!<%= yeoman.client %>/{app,components}/**/*.spec.js',
-        '!<%= yeoman.client %>/{app,components}/**/*.mock.js'
+        '!<%= yeoman.client %>/{app,components}/**/*.mock.js',
+        '!<%= yeoman.client %>/{app,components}/*.js',
+        '!<%= yeoman.client %>/app/radar/radar.js'
       ],
       test: {
         src: [
@@ -247,7 +249,16 @@ module.exports = function (grunt) {
     useminPrepare: {
       html: ['<%= yeoman.client %>/index.html'],
       options: {
-        dest: '<%= yeoman.dist %>/public'
+        dest: '<%= yeoman.dist %>/public',
+        flow: {
+          html: {
+            steps: {
+              js: ['concat', 'uglifyjs'],
+              css: ['cssmin']
+            },
+            post: {}
+          }
+        }
       }
     },
 

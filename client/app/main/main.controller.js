@@ -1,9 +1,7 @@
 'use strict';
 
 angular.module('gadriApp')
-  .controller('MainCtrl', function ($scope, $http) {
+  .controller('MainCtrl', function ($scope) {
 
-    $scope.map;
-
-
+    $scope.map = 'Google';
   });
