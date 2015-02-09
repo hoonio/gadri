@@ -5,6 +5,7 @@ angular.module('gadriApp')
 
     $scope.map = 'Google';
 
+
     angular.element(".googft-info-window").ready(function () {
         console.log('Info window load');
     });
