@@ -16,7 +16,7 @@ angular.module('gadriApp')
             data: [],
             options: {
               colors: {
-      self: ['#F1AF17','#F8D78A','#B91A1F','#DC8D90','#8ECC4F','#C0D6A5','#ef4e27','#F8A794'],
+      self: ['#D4512A','#EDB18D','#DCA335','#F1D59B','#7FB63E','#C9DDA5','#A52B25','#D7957D'],
                 sequential: true
               },
               text: {
@@ -59,4 +59,9 @@ angular.module('gadriApp')
       });
 
     });
+
+    function radarLinkClicked(){
+      console.log("Click");
+    };
+
   });
