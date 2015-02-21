@@ -58,10 +58,26 @@ angular.module('gadriApp')
         }
       });
 
-    });
+      var images = ['https://lh6.googleusercontent.com/-wvY4Qa7TT5g/VOEiTHAQJUI/AAAAAAACY0c/dY6mTDrewP4/s800/icon-hazard.png','https://lh3.googleusercontent.com/-Lj9E_l5IWAY/VOEiTb8M-QI/AAAAAAACY0k/wAM3n-CotD0/s800/icon-vulnerability.png','https://lh4.googleusercontent.com/-eIGyzuIT5TI/VOEiTN-6aqI/AAAAAAACY0g/2h3WKfXveoA/s800/icon-coping.png','https://lh6.googleusercontent.com/-MHPMdXg_nNI/VOEiTAmAI-I/AAAAAAACY0s/8gxP7S09gsU/s800/icon-risk.png'];
+      var x = [350,350,66,65];
+      var y = [40,330,330,40];
+      var logos = ['Hazard and exposure','Vulnerability','Lack of coping capacity','Global Age and Disaster Risk'];
 
-    function radarLinkClicked(){
-      console.log("Click");
-    };
+      for (var i=0; i<4; i+=1) {
+        var image = new RGraph.Drawing.Image({
+          id: 'cvs',
+          x: x[i],
+          y: y[i],
+          src: images[i],
+          options: {
+            width: 32,
+            height: 32,
+            tooltips: [logos[i]]
+          }
+        }).draw()
+      }
+
+
+    });
 
   });

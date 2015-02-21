@@ -6,7 +6,12 @@ angular.module('gadriApp')
       .state('main', {
         url: '/',
         templateUrl: 'app/main/main.html',
-        controller: 'MainCtrl'
+        controller: 'MainCtrl',
+        resolve: {
+          dataPromise: ['data', function(data){
+            return data.getAll();
+          }]
+        }
       })
       .state('vulnerability', {
         url: '/vulnerability',
