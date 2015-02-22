@@ -6,7 +6,16 @@ angular.module('gadriApp')
      $scope.data = data.entry;
     $scope.mapClick = function(){
       // 1.5 second delay added to wait for Google Fusion Table to load a new info window
-      setTimeout (insertGraph, 500);
+      setTimeout (insertGraph, 800);
+
+      // var childDiv = document.getElementsByClassName('rgraph');
+      // console.log(childDiv[0]);
+      //
+      // while(!childDiv[0]){
+      //   setTimeout
+      // }
+      //
+      // setTimeout (function(){ }, 800);
     };
 
     function insertGraph() {
@@ -79,6 +88,12 @@ angular.module('gadriApp')
               scale: 0
             }
           },
+          labels: {
+            axes: 's',
+            position: 'edge',
+            count: 2,
+            boxed: false
+          },
           ymax: 10,
           background: {
           axes: false,
@@ -86,7 +101,7 @@ angular.module('gadriApp')
               self: true,
               spokes: 4,
               axes: false,
-              count: 5
+              count: 2
             }
           },
           scale: {
