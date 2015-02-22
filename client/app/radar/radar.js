@@ -9,6 +9,7 @@ angular.module('gadriApp')
       angular.forEach(res.data.feed.entry, function(countryData){
         if (requestedCountry === countryData.gsx$url.$t)
         {
+          $scope.countryName = countryData.gsx$country.$t;
           var graphData = {
             id: 'cvs',
             data: [],

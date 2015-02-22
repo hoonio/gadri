@@ -89,7 +89,7 @@ angular.module('gadriApp')
             }
           },
           labels: {
-            axes: 's',
+            axes: '',
             position: 'edge',
             count: 2,
             boxed: false

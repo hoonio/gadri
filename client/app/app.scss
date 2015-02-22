@@ -19,6 +19,30 @@ $fa-font-path: "/bower_components/font-awesome/fonts";
   padding: 5px;
 }
 
+div.key {
+  float: left;
+  width: 162px;
+}
+
+div.key span {
+  font-size: 11px;
+  line-height: 15px;
+  margin-bottom: 8px;
+}
+
+div.domains {
+  background: url('https://lh4.googleusercontent.com/-coDQdv-HBZs/VOodUdZ8InI/AAAAAAACZDo/artLISQXy6g/s800/key-bg.png');
+  clear: both;
+}
+
+div.domains p {
+  padding-top: 4px;
+  height: 31px;
+  margin-bottom: 9px;
+  text-align: center;
+  font-size: 12px;
+}
+
 // Component styles are injected through grunt
 // injector
 @import 'main/main.scss';

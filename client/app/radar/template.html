@@ -1,7 +1,26 @@
-<div class="container-fluid">
+<div class="container-fluid" ng-controller="RadarCtrl">
   <div class="col-md-8 col-md-offset-2">
 
-    <h2><a href="/" type="button" class="btn btn-primary"> Back</a> Country vs Regional Average</h2>
+    <h2>{{countryName}}<a href="/" type="button" class="btn btn-primary"> Back</a> Country vs Regional Average</h2>
     <canvas id="cvs" width="450" height="400">[No canvas support]</canvas>
   </div>
+
+  <div class="col-md-2">
+    <div class="key">
+      <h3>Key</h3>
+      <p>
+        <span>Country<br>domain value</span>
+          <span>Regional<br>average</span>
+      </p>
+      <div class="domains">
+        <p class="domain1">Enabling environments</p>
+        <p class="domain2">Income security</p>
+        <p class="domain3">Health status</p>
+        <p class="domain4">Capability</p>
+      </div>
+    </div>
+
+
+  </div>
+
 </div>
