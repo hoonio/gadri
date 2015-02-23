@@ -30,6 +30,11 @@ div.key span {
   margin-bottom: 8px;
 }
 
+div.key span:nth-child(2) {
+  float: right;
+  text-align: right;
+}
+
 div.domains {
   background: url('https://lh4.googleusercontent.com/-coDQdv-HBZs/VOodUdZ8InI/AAAAAAACZDo/artLISQXy6g/s800/key-bg.png');
   clear: both;

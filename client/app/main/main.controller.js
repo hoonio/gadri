@@ -36,7 +36,7 @@ angular.module('gadriApp')
           radarCanvas.setAttribute("id", "cvs");
           radarCanvas.setAttribute("width", "150");
           radarCanvas.setAttribute("height", "150");
-          radarCanvas.setAttribute("style", "margin: -10px;");
+          radarCanvas.setAttribute("style", "margin: -20px;");
           var radarCanvas_content = document.createTextNode("[No canvas support]");
           radarCanvas.appendChild(radarCanvas_content);
           parentDiv[0].replaceChild(radarCanvas, childDiv[0]);
