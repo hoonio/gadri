@@ -9,10 +9,10 @@ angular.module('gadriApp')
       'title': 'Vunerability',
       'link': '/vulnerability'
     },{
-      'title': 'LCC',
+      'title': 'Lack of coping capacity',
       'link': '/coping'
     },{
-      'title': 'Hazard',
+      'title': 'Hazard and exposure',
       'link': '/hazard'
     },{
       'title': 'RadarGraph-UK',
