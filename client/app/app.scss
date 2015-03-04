@@ -48,6 +48,10 @@ div.domains p {
   font-size: 12px;
 }
 
+div#map-container {
+  margin-top: 50px;
+}
+
 // Component styles are injected through grunt
 // injector
 @import 'main/main.scss';
