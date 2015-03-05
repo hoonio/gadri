@@ -3,6 +3,11 @@ $fa-font-path: "/bower_components/font-awesome/fonts";
 
 @import 'bootstrap-sass-official/vendor/assets/stylesheets/bootstrap';
 
+@font-face {
+  font-family: "LexiaBold";
+  src: url(http://blob.hoonio.com/scripts/Lexia-Bold.ttf)
+  format("truetype");
+}
 /**
  * App-wide Styles
  */
@@ -10,6 +15,10 @@ $fa-font-path: "/bower_components/font-awesome/fonts";
 body {
   font-family: Verdana;
 }
+
+// .navbar-brand {
+//   font-family: LexiaBold;
+// }
 
 .browsehappy {
     margin: 0.2em 0;
