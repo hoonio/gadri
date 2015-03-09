@@ -16,6 +16,9 @@ body {
   font-family: Verdana;
 }
 
+.navbar-default {
+  background-color: rgb(255, 255, 255)
+}
 // .navbar-brand {
 //   font-family: LexiaBold;
 // }
@@ -33,28 +36,33 @@ body {
 }
 
 div.key {
-  float: left;
+  float: right;
   width: 162px;
 }
 
 div.key span {
   font-size: 11px;
   line-height: 15px;
-  margin-bottom: 8px;
 }
 
-div.key span:nth-child(2) {
+div.key span:nth-child(even) {
   float: right;
-  text-align: right;
+}
+
+.alignleft {
+	float: left;
+}
+.alignright {
+	float: right;
 }
 
 div.domains {
-  background: url('https://lh4.googleusercontent.com/-coDQdv-HBZs/VOodUdZ8InI/AAAAAAACZDo/artLISQXy6g/s800/key-bg.png');
+  background: url('https://lh5.googleusercontent.com/-2EqQpdl3T6Y/VPo3ZE7WpEI/AAAAAAACZM8/6s0Xq4BQJ2o/s800/key-bg.png');
   clear: both;
 }
 
 div.domains p {
-  padding-top: 4px;
+  padding-top: 8px;
   height: 31px;
   margin-bottom: 9px;
   text-align: center;
@@ -63,6 +71,17 @@ div.domains p {
 
 div#map-container {
   margin-top: 50px;
+}
+
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div#chart-container {
+  max-width: 612px;
+  @extend .center-block;
 }
 
 // Component styles are injected through grunt
