@@ -43,6 +43,8 @@ div.key {
 div.key span {
   font-size: 11px;
   line-height: 15px;
+  color: #000;
+  margin-bottom: 9px;
 }
 
 div.key span:nth-child(even) {
@@ -82,6 +84,16 @@ div#map-container {
 div#chart-container {
   max-width: 612px;
   @extend .center-block;
+}
+
+.btn-grey {
+  color: #FAFAFA;
+  background-color: #424242;
+  border-color: #212121;
+}
+
+.btn-grey:hover, .btn:focus {
+  color: #BDBDBD;
 }
 
 // Component styles are injected through grunt
