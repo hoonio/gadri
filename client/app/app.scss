@@ -12,6 +12,10 @@ $fa-font-path: "/bower_components/font-awesome/fonts";
  * App-wide Styles
  */
 
+ [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+   display: none !important;
+ }
+
 body {
   font-family: Verdana;
 }
@@ -94,6 +98,10 @@ div#chart-container {
 
 .btn-grey:hover, .btn:focus {
   color: #BDBDBD;
+}
+
+h2#radarHeading{
+  font-size: 25px;
 }
 
 // Component styles are injected through grunt

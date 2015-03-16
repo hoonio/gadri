@@ -7,30 +7,17 @@ angular.module('gadriApp')
     $scope.mapClick = function(){
       // 1.5 second delay added to wait for Google Fusion Table to load a new info window
       setTimeout (insertGraph, 800);
-
-      // var childDiv = document.getElementsByClassName('rgraph');
-      // console.log(childDiv[0]);
-      //
-      // while(!childDiv[0]){
-      //   setTimeout
-      // }
-      //
-      // setTimeout (function(){ }, 800);
     };
 
     function insertGraph() {
       angular.element(".googft-info-window").ready(function () {
         var parentDiv = document.getElementsByClassName('googft-info-window');
-        console.log("New window loaded");
         var childDiv = document.getElementsByClassName('rgraph');
-        console.log(childDiv[0]);
 
         if(childDiv[0]) {
 
           var countryName = childDiv[0].innerText;
-          console.log(countryName);
           var graphData = getGraphData(countryName);
-          console.log(graphData);
 
           var radarCanvas = document.createElement("canvas");
           radarCanvas.setAttribute("id", "cvs");
@@ -56,7 +43,6 @@ angular.module('gadriApp')
       angular.forEach($scope.data, function(countryData){
         if (countryName === countryData.gsx$url.$t)
         {
-          console.log('Found a match: ' + countryData.gsx$hazardandexposure.$t);
 
           graphData.data = [
             parseFloat(countryData.gsx$hazardandexposure.$t),
