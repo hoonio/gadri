@@ -410,9 +410,9 @@ module.exports = function (grunt) {
           branch: 'master'
         }
       },
-      openshift: {
+      gawi: {
         options: {
-          remote: 'openshift',
+          remote: 'gawi',
           branch: 'master'
         }
       }
