@@ -13,9 +13,9 @@ angular.module('gadriApp')
           }]
         }
       })
-      .state('vulnerability', {
-        url: '/vulnerability',
-        templateUrl: 'app/maps/vulnerability.html',
+      .state('incomesecurity', {
+        url: '/incomesecurity',
+        templateUrl: 'app/maps/incomesecurity.html',
         controller: 'MainCtrl',
         resolve: {
           dataPromise: ['data', function(data){
@@ -23,9 +23,9 @@ angular.module('gadriApp')
           }]
         }
       })
-      .state('coping', {
-        url: '/coping',
-        templateUrl: 'app/maps/coping.html',
+      .state('healthstatus', {
+        url: '/healthstatus',
+        templateUrl: 'app/maps/healthstatus.html',
         controller: 'MainCtrl',
         resolve: {
           dataPromise: ['data', function(data){
@@ -33,9 +33,9 @@ angular.module('gadriApp')
           }]
         }
       })
-      .state('hazard', {
-        url: '/hazard',
-        templateUrl: 'app/maps/hazard.html',
+      .state('capability', {
+        url: '/capability',
+        templateUrl: 'app/maps/capability.html',
         controller: 'MainCtrl',
         resolve: {
           dataPromise: ['data', function(data){
@@ -43,9 +43,19 @@ angular.module('gadriApp')
           }]
         }
       })
-      .state('radar', {
-        url: '/radar/:country',
-        templateUrl: 'app/radar/template.html',
-        controller: 'RadarCtrl'
+      .state('enablingenvironment', {
+        url: '/enablingenvironment',
+        templateUrl: 'app/maps/enablingenvironment.html',
+        controller: 'MainCtrl',
+        resolve: {
+          dataPromise: ['data', function(data){
+            return data.getAll();
+          }]
+        }
+      // })
+      // .state('radar', {
+      //   url: '/radar/:country',
+      //   templateUrl: 'app/radar/template.html',
+      //   controller: 'RadarCtrl'
       });
   });

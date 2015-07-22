@@ -8,7 +8,7 @@ angular.module('gadriApp', [
   'ui.bootstrap',
   'ngMap'
 ])
-  .constant('DATA_FEED', 'https://spreadsheets.google.com/feeds/list/1j_T9J66a5iFnjIiGVEW3uHFpz3iYxl-gFGdqghAjNVg/1/public/values?gid=2110785703&alt=json')
+  .constant('DATA_FEED', 'https://spreadsheets.google.com/feeds/list/1rnHdgtxBbGIRFT1Gz1cjhKi8An366SUUF2ArAY16uGA/1/public/values?gid=87971418&alt=json')
   .config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
     $urlRouterProvider
       .otherwise('/');
