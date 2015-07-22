@@ -1,7 +1,7 @@
 <div id="map-container" class="full-screen">
   <map zoom="2" center="[24.346596615611777, 7.2]" max-zoom="6" min-zoom="2" map-type-control="false"
-  styles="[{'featureType': 'water','elementType': 'labels',
-    'stylers': [{ 'visibility': 'off' }]},{'featureType': 'administrative','stylers': [{ 'visibility': 'off' }]},{'featureType': 'landscape','stylers': [{ 'visibility': 'off' }]},{'featureType': 'road','stylers': [{ 'visibility': 'off' }]}]" ng-click="mapClick()">
+  pan-control="false" street-view-control="false"
+  styles="[{'featureType': 'water','elementType': 'labels', 'stylers': [{ 'visibility': 'off' }]},{'featureType': 'administrative','stylers': [{ 'visibility': 'off' }]},{'featureType': 'landscape','stylers': [{ 'visibility': 'off' }]},{'featureType': 'road','stylers': [{ 'visibility': 'off' }]}]">
     <fusion-tables-layer
       query="{
         select: 'col9',
