@@ -6,52 +6,27 @@ angular.module('gadriApp')
       .state('main', {
         url: '/',
         templateUrl: 'app/main/main.html',
-        controller: 'MainCtrl',
-        resolve: {
-          dataPromise: ['data', function(data){
-            return data.getAll();
-          }]
-        }
+        controller: 'MainCtrl'
       })
       .state('incomesecurity', {
         url: '/incomesecurity',
         templateUrl: 'app/maps/incomesecurity.html',
-        controller: 'MainCtrl',
-        resolve: {
-          dataPromise: ['data', function(data){
-            return data.getAll();
-          }]
-        }
+        controller: 'MainCtrl'
       })
       .state('healthstatus', {
         url: '/healthstatus',
         templateUrl: 'app/maps/healthstatus.html',
-        controller: 'MainCtrl',
-        resolve: {
-          dataPromise: ['data', function(data){
-            return data.getAll();
-          }]
-        }
+        controller: 'MainCtrl'
       })
       .state('capability', {
         url: '/capability',
         templateUrl: 'app/maps/capability.html',
-        controller: 'MainCtrl',
-        resolve: {
-          dataPromise: ['data', function(data){
-            return data.getAll();
-          }]
-        }
+        controller: 'MainCtrl'
       })
       .state('enablingenvironment', {
         url: '/enablingenvironment',
         templateUrl: 'app/maps/enablingenvironment.html',
-        controller: 'MainCtrl',
-        resolve: {
-          dataPromise: ['data', function(data){
-            return data.getAll();
-          }]
-        }
+        controller: 'MainCtrl'
       // })
       // .state('radar', {
       //   url: '/radar/:country',

@@ -1,12 +1,12 @@
 'use strict';
 
 angular.module('gadriApp')
-  .controller('MainCtrl', ['data', '$scope', function (data, $scope) {
+  .controller('MainCtrl', ['$scope', function ($scope) {
 
-     $scope.data = data.entry;
+    //  $scope.data = data.entry;
     $scope.mapClick = function(){
       // 1.5 second delay added to wait for Google Fusion Table to load a new info window
-      setTimeout (insertGraph, 800);
+      // setTimeout (insertGraph, 800);
     };
 
     function insertGraph() {
