@@ -2,21 +2,28 @@
   <map zoom="2" center="[24.346596615611777, 7.2]" max-zoom="6" min-zoom="2" map-type-control="false"
   styles="[{'featureType': 'water','elementType': 'labels',
     'stylers': [{ 'visibility': 'off' }]},{'featureType': 'administrative','stylers': [{ 'visibility': 'off' }]},{'featureType': 'landscape','stylers': [{ 'visibility': 'off' }]},{'featureType': 'road','stylers': [{ 'visibility': 'off' }]}]" ng-click="mapClick()">
-    <fusion-tables-layer query="{
-      select: 'col9',
-      from: '1zpBcYtBCjwz3oS_oE3oGU8d_1sEKKbpAJBZNiptO'
+    <fusion-tables-layer
+      query="{
+        select: 'col9',
+        from: '1zpBcYtBCjwz3oS_oE3oGU8d_1sEKKbpAJBZNiptO'
       }"
       options= "{
         styleId: 2,
         templateId: 2
-      }">
-    </fusion-tables-layer>
-
+      }"
+      styles="[{
+        where: 'IndexRank = 0',
+        polygonOptions: {
+          fillColor: '#CCCCCC',
+          fillOpacity: 1.0
+        }
+    }]">
   </map>
 </div>
 <div id="legend" style="font-size: 12px; color: rgb(102, 102, 102); z-index: 0; position: absolute; bottom: 11px; right: 0px;">
   <!-- Disaster Risk and Age Index -->
-  <span style="display: block; font-family: Verdana; font-size: 12px; color: #666666; text-align: right;"> Created by <a style="font-family: Verdana; font-size: 12px; font-weight:bold; color: #F25821; text-decoration: none" href="http://www.hoonio.com" target="_blank">Hoonio</a></span>
+  <span style="display: block; font-family: Verdana; font-size: 12px; color: #666666; text-align: right;">Index Ranking</span>
+  <img src="https://lh3.googleusercontent.com/-VFqpzGGZEWw/Va_1vSH_EOI/AAAAAAACjZo/xVB4i87bnlE/s288-Ic42/agewatch-index.jpg" /> <br/>
   <div class="btn-group" role="group" aria-label="mapSwitch">
     <a type="button" class="btn btn-default" href="/"  data-toggle="tooltip" data-placement="top" title="Tooltip on top"><img style="vertical-align:middle;margin-bottom:0px;margin-top:0px" height="18px" width="18px" src="https://lh6.googleusercontent.com/-MHPMdXg_nNI/VOEiTAmAI-I/AAAAAAACY0s/8gxP7S09gsU/s800/icon-risk.png" /></a>
     <a type="button" class="btn btn-default" href="/incomesecurity" selected><img style="vertical-align:middle;margin-bottom:0px;margin-top:0px" height="18px" width="18px" src="https://lh3.googleusercontent.com/-APcRnw7AwGM/UiyOopR1yEI/AAAAAAAB4Ws/A3wi2c32IIM/s800-Ic42/helpAge-icon-1income.png" /></a>
