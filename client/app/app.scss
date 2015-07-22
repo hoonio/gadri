@@ -104,8 +104,11 @@ h2#radarHeading{
   font-size: 25px;
 }
 
+.btn.active {
+  width: 228px;
+}
+
 // Component styles are injected through grunt
 // injector
 @import 'main/main.scss';
-@import 'modal/modal.scss';
 // endinjector
