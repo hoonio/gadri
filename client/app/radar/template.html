@@ -1,0 +1,34 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="center-block">
+      <h2 class="text-center" id="radarHeading" ng-show="countryName"> {{countryName}} disaster risk and sub-regional average</h2>
+    </div>
+  </div>
+
+  <div id="chart-container">
+
+    <canvas id="cvs" width="450" height="400">[No canvas support]</canvas>
+
+    <div class="key">
+      <h3>Key</h3>
+      <p class="column" style="clear:both;">
+        <span class="alignleft">Country<br> domain value</span>
+        <span class="alignright">Sub-regional<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;average</span>
+      </p>
+      <!-- <p class="column">
+        <span class="text-left">domain value</span>
+        <span class="text-right">average</span>
+      </p> -->
+      <div class="domains">
+        <p class="domain1">Hazard and exposure</p>
+        <p class="domain2">Vulnerability</p>
+        <p class="domain3">Lack of coping capacity</p>
+        <p class="domain4">Overall risk</p>
+      </div>
+      <a href="/" type="button" class="btn btn-grey"> Back</a>
+    </div>
+
+
+  </div>
+
+</div>

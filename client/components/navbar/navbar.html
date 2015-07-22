@@ -1,0 +1,33 @@
+<div class="navbar navbar-default navbar-static-top" ng-controller="NavbarCtrl">
+  <!-- <div class="container"> -->
+  <div>
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" ng-click="isCollapsed = !isCollapsed">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="/" class="navbar-brand" style="padding:0px;"><img src="https://lh6.googleusercontent.com/-G4DwuRHXot8/VPeRq0WrjqI/AAAAAAACZLA/ttXXKnwuXjE/s144/DRandAgeIndex_Logo_draftv2.png" srcset="https://lh6.googleusercontent.com/-G4DwuRHXot8/VPeRq0WrjqI/AAAAAAACZLA/ttXXKnwuXjE/s288/DRandAgeIndex_Logo_draftv2.png 2x" height="50px" alt="Disaster Risk and Age Index" /></a>
+    </div>
+    <div collapse="isCollapsed" class="navbar-collapse collapse" id="navbar-main">
+      <ul class="nav navbar-nav">
+        <li ng-class="{active: isActive('/')}">
+            <a ng-href="/"><img style="margin-right:5px;" height="20px" width="20px" src="https://lh6.googleusercontent.com/-MHPMdXg_nNI/VOEiTAmAI-I/AAAAAAACY0s/8gxP7S09gsU/s800/icon-risk.png" />Overall risk</a>
+        </li>
+        <li ng-class="{active: isActive('/hazard')}">
+            <a ng-href="/hazard"><img style="margin-right:5px;" height="20px" width="20px" src="https://lh6.googleusercontent.com/-wvY4Qa7TT5g/VOEiTHAQJUI/AAAAAAACY0c/dY6mTDrewP4/s800/icon-hazard.png" />Hazard and exposure</a>
+        </li>
+        <li ng-class="{active: isActive('/vulnerability')}">
+            <a ng-href="/vulnerability"><img style="margin-right:5px;" height="20px" width="20px" src="https://lh3.googleusercontent.com/-Lj9E_l5IWAY/VOEiTb8M-QI/AAAAAAACY0k/wAM3n-CotD0/s800/icon-vulnerability.png" />Vunerability</a>
+        </li>
+        <li ng-class="{active: isActive('/coping')}">
+            <a ng-href="/coping"><img style="margin-right:5px;" height="20px" width="20px" src="https://lh4.googleusercontent.com/-eIGyzuIT5TI/VOEiTN-6aqI/AAAAAAACY0g/2h3WKfXveoA/s800/icon-coping.png" />Lack of coping capacity</a>
+        </li>
+        <!-- <li ng-repeat="item in menu" ng-class="{active: isActive(item.link)}">
+            <a ng-href="{{item.link}}">{{item.title}}</a>
+        </li> -->
+      </ul>
+    </div>
+  </div>
+</div>
