@@ -1,12 +1,8 @@
 $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
+$break-mobile: 400px;
 
 @import 'bootstrap-sass-official/vendor/assets/stylesheets/bootstrap';
 
-@font-face {
-  font-family: "LexiaBold";
-  src: url(http://blob.hoonio.com/scripts/Lexia-Bold.ttf)
-  format("truetype");
-}
 /**
  * App-wide Styles
  */
@@ -107,7 +103,35 @@ h2#radarHeading{
   width: 228px;
 }
 
+.credit-hoonio{
+  display: none;
+  text-align: right;
+}
+
+.credit-hoonio a{
+  color: #F25821;
+  text-weight: bold;
+}
+
+@media screen and (max-width: $break-mobile){
+  .btn-group {
+    width: 100%;
+  }
+
+  .btn.btn-default {
+    width: 10%;
+  }
+
+  .btn.active {
+    width: 60%;
+  }
+
+  .credit-hoonio{
+    display: block;
+  }
+}
+
 // Component styles are injected through grunt
 // injector
-@import 'main/main.scss';
+// @import 'main/main.scss';
 // endinjector
