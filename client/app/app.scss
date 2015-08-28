@@ -18,9 +18,6 @@ body {
 .navbar-default {
   background-color: rgb(255, 255, 255)
 }
-// .navbar-brand {
-//   font-family: LexiaBold;
-// }
 
 .browsehappy {
     margin: 0.2em 0;
@@ -71,7 +68,6 @@ div.domains p {
 }
 
 div#map-container {
-  // margin-top: 50px;
 }
 
 .center-block {
@@ -104,8 +100,8 @@ h2#radarHeading{
 }
 
 .credit-hoonio{
-  display: none;
   text-align: right;
+  display: block;
 }
 
 .credit-hoonio a{
@@ -127,9 +123,6 @@ h2#radarHeading{
     width: 60%;
   }
 
-  .credit-hoonio{
-    display: block;
-  }
 }
 
 // Component styles are injected through grunt
