@@ -1,7 +1,13 @@
 'use strict';
 
-angular.module('gadriApp')
-  .config(function ($stateProvider) {
+angular.module('gadriApp', [
+  'ui.router',
+  'ngMap'
+])
+  .constant('DATA_FEED', 'https://spreadsheets.google.com/feeds/list/1j_T9J66a5iFnjIiGVEW3uHFpz3iYxl-gFGdqghAjNVg/1/public/values?gid=2110785703&alt=json')
+  .config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
+    $urlRouterProvider
+      .otherwise('/');
     $stateProvider
       .state('main', {
         url: '/',
@@ -48,4 +54,5 @@ angular.module('gadriApp')
         templateUrl: 'app/radar/template.html',
         controller: 'RadarCtrl'
       });
+    $locationProvider.html5Mode(true);
   });
