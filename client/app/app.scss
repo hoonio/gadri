@@ -1,13 +1,7 @@
-$icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
 $fa-font-path: "/bower_components/font-awesome/fonts";
 
-@import 'bootstrap-sass-official/vendor/assets/stylesheets/bootstrap';
+@import '../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap';
 
-@font-face {
-  font-family: "LexiaBold";
-  src: url(http://blob.hoonio.com/scripts/Lexia-Bold.ttf)
-  format("truetype");
-}
 /**
  * App-wide Styles
  */
@@ -23,9 +17,6 @@ body {
 .navbar-default {
   background-color: rgb(255, 255, 255)
 }
-// .navbar-brand {
-//   font-family: LexiaBold;
-// }
 
 .browsehappy {
     margin: 0.2em 0;
@@ -104,8 +95,34 @@ h2#radarHeading{
   font-size: 25px;
 }
 
+.modal-primary,
+.modal-info,
+.modal-success,
+.modal-warning,
+.modal-danger {
+  .modal-header {
+    color: #fff;
+    border-radius: 5px 5px 0 0;
+  }
+}
+.modal-primary .modal-header {
+  background: $brand-primary;
+}
+.modal-info .modal-header {
+  background: $brand-info;
+}
+.modal-success .modal-header {
+  background: $brand-success;
+}
+.modal-warning .modal-header {
+  background: $brand-warning;
+}
+.modal-danger .modal-header {
+  background: $brand-danger;
+}
+
+
 // Component styles are injected through grunt
 // injector
 @import 'main/main.scss';
-@import 'modal/modal.scss';
 // endinjector
