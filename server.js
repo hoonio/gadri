@@ -5,10 +5,10 @@ var express = require('express')
 
 var app = express();
 app.set('port', process.env.PORT || 8080);
-app.use(express.static(__dirname + '/gadri/'));
+app.use(express.static(__dirname + '/client/'));
 
 app.get('/*', function(request, response) {
-  var data = fs.readFileSync('gadri/index.html').toString();
+  var data = fs.readFileSync(__dirname + '/client/index.html').toString();
   response.send(data);
 });
 
