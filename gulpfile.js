@@ -5,5 +5,5 @@ gulp.task('styles', function(){
   gulp.src('gadri/app/app.scss')
     .pipe($.sass())
     .pipe($.cssmin())
-    .pipe(gulp.dest('./dist/'))
+    .pipe(gulp.dest('./app/'))
 });
